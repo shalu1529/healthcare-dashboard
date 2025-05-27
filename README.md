@@ -29,6 +29,12 @@ The goal of this project was to:
 ---
 
 
+## 📁 Project Structure
+
+![image](https://github.com/user-attachments/assets/26e5b7ee-3128-4e11-80cb-d0ecca1c354b)
+
+
+
 ## 📌 Installation & Setup
 
 ```bash
