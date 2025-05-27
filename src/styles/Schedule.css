@@ -1,0 +1,77 @@
+
+.schedule-section {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.schedule-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.schedule-day {
+  margin-bottom: 1.5rem;
+}
+
+.day-title {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.schedule-appointments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.schedule-card {
+  /* background: #f1f5ff; */
+  background: #e6e6fa;
+  border-radius: 1.25rem;
+  padding: 0.85rem 1rem;
+  transition: all 0.2s ease;
+  border-left: none; /* remove old style */
+}
+
+/* New layout for updated style */
+.schedule-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-card-title {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+.schedule-card-time {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.schedule-icon-right {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+/* Remove color classes */
+.schedule-card.red,
+.schedule-card.orange,
+.schedule-card.green {
+  border-left: none;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .schedule-appointments {
+    grid-template-columns: 1fr;
+  }
+}

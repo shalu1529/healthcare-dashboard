@@ -1,0 +1,79 @@
+/* MobileSidebar.css */
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.mobile-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #06b6d4;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: #334155;
+  cursor: pointer;
+}
+
+/* Sidebar Overlay */
+.mobile-sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: rgba(0, 0, 0, 0.3);
+  overflow-x: hidden;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-sidebar-overlay.open {
+  width: 100%;
+}
+
+.mobile-sidebar {
+  background: white;
+  width: 250px;
+  height: 100%;
+  padding: 1.5rem;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.close-icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #334155;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav li {
+  margin-bottom: 1rem;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

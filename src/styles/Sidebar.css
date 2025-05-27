@@ -1,0 +1,85 @@
+/* Sidebar component styles */
+.sidebar {
+  width: 250px;
+  background: white;
+  padding: 2rem 0;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #e2e8f0;
+}
+
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-title {
+  padding: 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.header-left {
+
+display: flex;
+  justify-content: flex-start;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem; /* Moves logo slightly up */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #06b6d4;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-item {
+  margin-bottom: 0.25rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: #64748b;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-right: 3px solid transparent;
+}
+
+.nav-link:hover {
+  background: #f8fafc;
+  color: #334155;
+}
+
+.nav-link.active {
+  background: #eff6ff;
+  color: #2563eb;
+  border-right-color: #2563eb;
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
